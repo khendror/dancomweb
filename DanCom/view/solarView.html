@@ -1,0 +1,194 @@
+<div class="container header-modal" id="page2-top">
+    <div class="row">
+        <div class="col-lg-8 mx-auto">
+            <div class="modal-body">
+                <!-- Project Details Go Here -->
+                <h2>Project Name</h2>
+                <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
+                <img class="img-fluid d-block mx-auto" src="img/portfolio/02-full.jpg" alt="">
+                <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
+                <ul class="list-inline">
+                    <li>Date: January 2017</li>
+                    <li>Client: Explore</li>
+                    <li>Category: Graphic Design</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="flex-container">
+    <div class="row">
+        <div class="in-box">
+            <div class="in-box-4">
+                Light Status
+                <div class="light-box">
+                    <div id="light-bulb" class="off ui-draggable" ><div id="light-bulb2" style="opacity: 0; "></div></div>
+                </div>
+                <p id="light-mode2">Off</p>
+            </div>
+        </div>
+        <div class="in-box">
+            <div class="in-box-4">
+                Change Status
+                <p id="turn-light-text">Press the button to turn the light <span id="light-mode">on</span></p>
+                <div href="" class="cube-switch">
+                    <span class="switch">
+                     <span class="switch-state off">Off</span>
+                     <span class="switch-state on">On</span>
+                      </span>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="flex-container">
+    <div class="row">
+        <div class="in-box">
+            <div class="in-box-2">
+                Outdoor Lighting
+                <canvas id="light-g"></canvas>
+                <span id="light-txt"></span><span id="light-txt2">%</span>
+            </div>
+            <div class="in-box-3">
+                Outdoor Lighting Graph
+                <canvas id="light-ch"></canvas>
+            </div>
+        </div>
+        <div class="in-box">
+            <div class="in-box-2">
+                Outdoor Temperature
+                <div class="temp3">
+                    <div class="liquid liquid-bg-color"></div>
+                </div>
+                <span id="lightTemp-txt"></span><span class="cels">&#8451;</span>
+            </div>
+            <div class="in-box-3">
+                Outdoor Temperature Graph
+                <canvas id="lightTemp-ch"></canvas>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="flex-container">
+    <div class="row">
+        <div class="in-box">
+            <div class="in-box-2">
+                Humidity
+                <canvas id="humidity-g"></canvas>
+                <span id="humidity-txt"></span><span id="humidity-txt2">%</span>
+            </div>
+            <div class="in-box-3">
+                Humidity Graph
+                <canvas id="humidity-ch"></canvas>
+            </div>
+        </div>
+        <div class="in-box">
+            <div class="in-box-4">
+                Weather Forecast
+                <p class="forecast" ng-if="weatherDay==0">
+                    {{weatherData.city}}, {{weatherData.country}}<br>
+                    <img ng-src="{{weatherData.image}}"><br>
+                    <span class="forecast-img-txt">{{weatherData.currently}}<br></span>
+                    <span class="forecast-txt">
+                        Current temperature: {{weatherData.temp}}&#8451;<br>
+                        The highest temperature for the day: {{weatherData.high}}&#8451;<br>
+                        The lowest temperature for the day: {{weatherData.low}}&#8451;<br>
+                        Current wind chill: {{weatherData.windChill}}&#8451;, Diraction: {{weatherData.windDirection}}<br>
+                        Current Wind Speed: {{weatherData.windSpeed}}<br>
+                        Current Humidity: {{weatherData.humidity}}%
+                    </span>
+                </p>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+
+
+
+<div class="flex-container">
+    <div class="row">
+        <div class="in-box">
+            <div class="in-box-4">
+                Status
+                <div class="t-speedometer">
+                    <canvas id="status-light-g"></canvas>
+                    <span>GOOD</span>
+                </div>
+            </div>
+        </div>
+        <div class="in-box">
+            <div class="in-box-2">
+                Battery Power
+                <div class="battery2 ">
+                    <div class="liquid liquid-bg-color"></div>
+                </div>
+                <span id="soc-light-txt"></span>
+            </div>
+            <div class="in-box-3">
+                Battery Power Graph
+                <canvas id="soc-light-ch"></canvas>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="flex-container">
+    <div class="row">
+        <div class="in-box">
+            <div class="in-box-2">
+                Voltage
+                <canvas id="voltage-light-g"></canvas>
+                <span id="voltage-light-txt"></span>
+            </div>
+            <div class="in-box-3">
+                Voltage Graph
+                <canvas id="voltage-light-ch"></canvas>
+            </div>
+        </div>
+        <div class="in-box">
+            <div class="in-box-2">
+                Current
+                <canvas id="current-light-g"></canvas>
+                <span id="current-light-txt"></span>
+            </div>
+            <div class="in-box-3">
+                Current Graph
+                <canvas id="current-light-ch"></canvas>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="flex-container">
+    <div class="row">
+        <div class="in-box">
+            <div class="in-box-2">
+                Temperature
+                <div class="temp2">
+                    <div class="liquid liquid-bg-color"></div>
+                </div>
+                <span id="temp-light-txt"></span><span class="cels">&#8451;</span>
+            </div>
+            <div class="in-box-3">
+                Temperature Graph
+                <canvas id="temp-light-ch"></canvas>
+            </div>
+        </div>
+        <div class="in-box">
+            <div class="in-box-4">
+                Location
+                <div id="map2"></div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="js/solar.js"></script>
+<script async defer
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAEZGZs3A25mCHkmHqwWJhyfzBqxMjZc6k&callback=myMap2">
+</script>

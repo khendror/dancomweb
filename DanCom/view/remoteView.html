@@ -1,0 +1,96 @@
+<div class="container header-modal" id="page1-top">
+    <div class="row">
+        <div class="col-lg-8 mx-auto">
+            <div class="modal-body">
+                <!-- Project Details Go Here -->
+                <h2>Remote Energy</h2>
+                <img class="img-fluid d-block mx-auto" src="img/portfolio/02-full.jpg" alt="">
+                <p>DanCom-Software Smart Energy System, Cloud based system for remotely monitor, and control IoT Energy Devices over Internet based communications
+                    (Wi-Fi, Cellular etc.), provides an administrative
+                    dashboard and historical energy data for low cost maintenance.
+                    Customized control of multiple IoT energy devices for best performance and usage.
+                    Optional AI integration for fully automated administration.</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="flex-container">
+    <div class="row">
+        <div class="in-box">
+            <div class="in-box-4">
+                Status
+                <canvas id="status-g"></canvas>
+                <span id="gauge1-txt">GOOD</span>
+            </div>
+        </div>
+        <div class="in-box">
+            <div class="in-box-2">
+                Battery Power
+                <div class="battery ">
+                    <div class="liquid liquid-bg-color"></div>
+                </div>
+                <span id="soc-txt"></span>
+            </div>
+            <div class="in-box-3">
+                Battery Power Graph
+                <canvas id="soc-ch"></canvas>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="flex-container" >
+    <div class="row">
+        <div class="in-box">
+            <div class="in-box-2">
+                Voltage
+                <canvas id="voltage-g"></canvas>
+                <span id="voltage-txt"></span>
+            </div>
+            <div class="in-box-3">
+                Voltage Graph
+                <canvas id="voltage-ch"></canvas>
+            </div>
+        </div>
+        <div class="in-box">
+            <div class="in-box-2">
+                Current
+                <canvas id="current-g"></canvas>
+                <span id="current-txt"></span>
+            </div>
+            <div class="in-box-3">
+                Current Graph
+                <canvas id="current-ch"></canvas>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="flex-container">
+    <div class="row">
+        <div class="in-box">
+            <div class="in-box-2">
+                Temperature
+                <div class="temp">
+                    <div class="liquid liquid-bg-color"></div>
+                </div>
+                <span id="temp-txt"></span><span class="cels">&#8451;</span>
+            </div>
+            <div class="in-box-3">
+                Temperature Graph
+                <canvas id="temp-ch"></canvas>
+            </div>
+        </div>
+        <div class="in-box">
+            <div class="in-box-4">
+                Location
+                <div id="map"></div>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="js/remote.js"></script>
+<script async defer
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAEZGZs3A25mCHkmHqwWJhyfzBqxMjZc6k&callback=myMap">
+</script>

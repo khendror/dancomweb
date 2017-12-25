@@ -1,0 +1,101 @@
+<div class="container header-modal" id="page1-top">
+    <div class="row">
+        <div class="col-lg-8 mx-auto">
+            <div class="modal-body">
+                <!-- Project Details Go Here -->
+                <h2>Portable Energy</h2>
+                <img class="img-fluid d-block mx-auto" src="img/portfolio/02-full.jpg" alt="">
+                <p>DanCom-Software Smart Portable energy solution, portable energy suitcase for various energy dependent requirements,
+                    where no power grid connection is available or relevant. up to 2.5KW of energy storage in 5V, 12V, 220V.
+                    Fully compatible with DanCom-Software Remote Energy for monitoring real-time and historical energy traits.
+                    Off-grid Street Lights DanCom-Software Smart Off-Grid Street Lights are the state of the art outdoor, solar-powered Off-grid Street
+                    Lighting (OSL) pole. Remotely controlled and monitored, DanCom-Software Smart Off-Grid Street Lights
+                    offer low cost lighting solutions with little infrastructure cost for cities, roads, Highways, Villages, Parks, Industry premise.
+                    No grid connection is required for illumination; infrastructure cost reduction, remotely adjustable
+                    lighting via Secure Wireless communications (Wi-Fi, Cellular, Satellite), Self-energy storage and
+                    production – a self-contained solar power assembly, with DanTech Li-Ion energy storage solution.<br>
+                    See also: <a href="http://www.eniac-battman.eu/">http://www.eniac-battman.eu/</a></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="flex-container">
+    <div class="row">
+        <div class="in-box">
+            <div class="in-box-4">
+                Status
+                <canvas id="status-g"></canvas>
+                <span id="gauge1-txt">GOOD</span>
+            </div>
+        </div>
+        <div class="in-box">
+            <div class="in-box-2">
+                Battery Power
+                <div class="battery ">
+                    <div class="liquid liquid-bg-color"></div>
+                </div>
+                <span id="soc-txt"></span>
+            </div>
+            <div class="in-box-3">
+                Battery Power Graph
+                <canvas id="soc-ch"></canvas>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="flex-container" >
+    <div class="row">
+        <div class="in-box">
+            <div class="in-box-2">
+                Voltage
+                <canvas id="voltage-g"></canvas>
+                <span id="voltage-txt"></span>
+            </div>
+            <div class="in-box-3">
+                Voltage Graph
+                <canvas id="voltage-ch"></canvas>
+            </div>
+        </div>
+        <div class="in-box">
+            <div class="in-box-2">
+                Current
+                <canvas id="current-g"></canvas>
+                <span id="current-txt"></span>
+            </div>
+            <div class="in-box-3">
+                Current Graph
+                <canvas id="current-ch"></canvas>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="flex-container">
+    <div class="row">
+        <div class="in-box">
+            <div class="in-box-2">
+                Temperature
+                <div class="temp">
+                    <div class="liquid liquid-bg-color"></div>
+                </div>
+                <span id="temp-txt"></span><span class="cels">&#8451;</span>
+            </div>
+            <div class="in-box-3">
+                Temperature Graph
+                <canvas id="temp-ch"></canvas>
+            </div>
+        </div>
+        <div class="in-box">
+            <div class="in-box-4">
+                Location
+                <div id="map"></div>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="js/portable.js"></script>
+<script async defer
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAEZGZs3A25mCHkmHqwWJhyfzBqxMjZc6k&callback=myMap">
+</script>
